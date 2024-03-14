@@ -612,6 +612,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 122
       objectReference: {fileID: 0}
+    - target: {fileID: 6352380286104311735, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
+      propertyPath: explosionParticle
+      value: 
+      objectReference: {fileID: 1887638811}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -624,6 +628,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
   m_PrefabInstance: {fileID: 1076726579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1887638811 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
+  m_PrefabInstance: {fileID: 610721178}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2014335011
 GameObject:
