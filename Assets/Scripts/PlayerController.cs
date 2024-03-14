@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
+    private Animator playerAnim;
     public float jumpForce;
     public float gravityModifier;
+    public bool isOnGround = true;
     public bool gameOver = false;
-    private Animator playerAnim;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,6 @@ public class PlayerController : MonoBehaviour
         Physics.gravity *= gravityModifier;
     }
 
-    public bool isOnGround = true;
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
-            playerAnim.SetTrigger("Jump_Trig");
+            playerAnim.SetTrigger("Jump_trig");
         }
     }
 
